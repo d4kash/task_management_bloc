@@ -1,0 +1,46 @@
+name: task_management_bloc
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.4.1 <4.0.0"
+
+dependencies:
+  bloc: ^8.1.4
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  intl: ^0.19.0
+  path: ^1.9.0
+  sqflite: ^2.3.3+1
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/ic_launcher.png"
+  adaptive_icon_foreground: "assets/ic_launcher_adaptive_fore.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  #  background_image: "assets/images/background.png"
+  image: assets/ic_launcher_adaptive_fore.png
+  # branding: assets/images/aisectword.png
+  android_12:
+    image: assets/ic_launcher_adaptive_fore.png
+    # branding: assets/images/aisectword.png
+  web: false
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
