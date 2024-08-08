@@ -24,8 +24,8 @@ _Include screenshots of the app here_
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/task-manager-flutter.git
-   cd task-manager-flutter
+   git clone https://github.com/d4kash/task_management_bloc.git
+   cd task_management_bloc
    ```
 
 2. **Install Dependencies**
