@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
           '/addTask': (context) => const AddTaskScreen(),
           '/editTask': (context) {
             final task = ModalRoute.of(context)!.settings.arguments as Task;
-            return EditTaskScreen(task: task);
+            return const EditTaskScreen();
           },
         },
       ),

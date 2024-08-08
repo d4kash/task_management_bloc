@@ -6,7 +6,6 @@ import '../cubit/task_cubit.dart';
 import '../models/task.dart';
 import 'route_transitions.dart';
 import 'add_task_screen.dart';
-import 'edit_task_screen.dart';
 
 class TaskListScreen extends StatefulWidget {
   const TaskListScreen({super.key});
@@ -84,11 +83,16 @@ class _TaskListScreenState extends State<TaskListScreen> {
                         );
                   },
                   onEdit: () {
-                    Navigator.of(context).push(
-                      SlideTransitionPageRoute(
-                        page: EditTaskScreen(task: task),
-                      ),
+                    Navigator.pushNamed(
+                      context,
+                      '/editTask',
+                      arguments: task,
                     );
+                    // Navigator.of(context).push(
+                    //   SlideTransitionPageRoute(
+                    //     page: EditTaskScreen(),
+                    //   ),
+                    // );
                   },
                   onDelete: () {
                     context.read<TaskCubit>().deleteTask(task.id!);
